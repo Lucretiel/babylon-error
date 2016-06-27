@@ -1,0 +1,49 @@
+
+> babylon-parse-error@1.0.0 build /Users/nathan/Documents/babylon-error
+> webpack
+
+[webpack-validator] Config is valid.
+Hash: 396f0bfb9d565b6f60f0
+Version: webpack 1.13.1
+Time: 784ms
+    + 1 hidden modules
+
+ERROR in ./index.jsx
+Module build failed: SyntaxError: /Users/nathan/Documents/babylon-error/index.jsx: Assigning to rvalue (23:3)
+  21 | 	// them 1 by 1 to see.
+  22 | 	x = thing() ?
+> 23 | 		(value => true) :
+     | 		 ^
+  24 | 		value => false
+  25 | 
+  26 | 	/*
+    at Parser.pp.raise (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/location.js:22:13)
+    at Parser.pp.toAssignable (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/lval.js:96:14)
+    at Parser.toAssignable (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/plugins/flow.js:186:22)
+    at Parser.pp.toAssignableList (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/lval.js:122:19)
+    at Parser.toAssignableList (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/plugins/flow.js:200:20)
+    at Parser.pp.parseArrowExpression (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:905:22)
+    at Parser.pp.parseParenAndDistinguishExpression (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:631:17)
+    at Parser.pp.parseExprAtom (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:481:19)
+    at Parser.parseExprAtom (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/plugins/jsx/index.js:18:22)
+    at Parser.pp.parseExprSubscripts (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:277:19)
+    at Parser.pp.parseMaybeUnary (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:257:19)
+    at Parser.pp.parseExprOps (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:188:19)
+    at Parser.pp.parseMaybeConditional (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:165:19)
+    at Parser.pp.parseMaybeAssign (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:128:19)
+    at Parser.parseMaybeAssign (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/plugins/flow.js:454:20)
+    at Parser.pp.parseConditional (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:175:28)
+    at Parser.parseConditional (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/plugins/flow.js:67:22)
+    at Parser.pp.parseMaybeConditional (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:168:15)
+    at Parser.pp.parseMaybeAssign (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:128:19)
+    at Parser.parseMaybeAssign (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/plugins/flow.js:454:20)
+    at Parser.pp.parseMaybeAssign (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:151:23)
+    at Parser.parseMaybeAssign (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/plugins/flow.js:454:20)
+    at Parser.pp.parseExpression (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:92:19)
+    at Parser.pp.parseStatement (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/statement.js:163:19)
+    at Parser.parseStatement (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/plugins/flow.js:30:22)
+    at Parser.pp.parseBlockBody (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/statement.js:529:21)
+    at Parser.pp.parseBlock (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/statement.js:510:8)
+    at Parser.pp.parseFunctionBody (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/expression.js:927:22)
+    at Parser.parseFunctionBody (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/plugins/flow.js:17:20)
+    at Parser.pp.parseFunction (/Users/nathan/Documents/babylon-error/node_modules/babylon/lib/parser/statement.js:647:8)
